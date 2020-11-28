@@ -18,9 +18,9 @@ loading: false
 
 orderHandler = (event) => {
     event.preventDefault();
-    this.setState({loading: true})
+    this.setState({loading: true});
         const order = {
-      ingredients: this.state.ingredients,
+      ingredients: this.props.ingredients,
       price: this.props.price,
       customer: {
         name: 'Nick Keller',
